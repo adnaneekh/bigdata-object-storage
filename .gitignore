@@ -3,7 +3,14 @@
 !.python-version
 __pycache__/
 *.csv
+!lab_medallion/seeds/*.csv
 *.bin
 *.duckdb
 *.duckdb.wal
 init.sql
+
+# dbt
+target/
+dbt_packages/
+logs/
+*.duckdb
