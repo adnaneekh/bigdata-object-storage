@@ -8,13 +8,19 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "duckdb>=1.5.6",
     "faker>=40.41.0",
+    "pytz>=2026.5",
 ]
 
 [project.scripts]
 dataset-users = "bigdata_object_storage.dataset_users:main"
 dataset-orders = "bigdata_object_storage.dataset_orders:main"
+orders-report = "bigdata_object_storage.orders_report:main"
 
 [build-system]
 requires = ["uv_build>=0.9.30,<0.10.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = []
