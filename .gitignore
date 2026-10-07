@@ -1,0 +1,6 @@
+.*
+!.gitignore
+!.python-version
+__pycache__/
+*.csv
+*.bin

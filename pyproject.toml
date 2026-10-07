@@ -1,0 +1,20 @@
+[project]
+name = "bigdata-object-storage"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "adnaneekh", email = "135380359+adnaneekh@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "faker>=40.41.0",
+]
+
+[project.scripts]
+dataset-users = "bigdata_object_storage.dataset_users:main"
+dataset-orders = "bigdata_object_storage.dataset_orders:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
